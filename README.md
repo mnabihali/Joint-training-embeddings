@@ -18,13 +18,19 @@ Use `train.py` to jointly train both the speech enhancement and the speech class
 - `-R, --resume`, resume training from the last saved checkpoint.
 
 Syntax `python train.py -C config/train/train.json` or `python train.py config/train/train.json -R`
+
+### Evaluation
+Use `enhancement.py` to evaluate both models. 
+
+Syntax: `python enhancement.py -C config/enhancement/unet_basic.json -D 0 -O <path to save the enhanced signals> -M <path to the speech enhancement model> -m <path to the back end speech classifier>
+
 ## Steps of Embeds-Enh Strategy
 
 ### Embeddings Extraction
 ---
 You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec), and modify its path in `emb.py` file to extract the embeddings from the dataset.
 
-Use `python emb.py`
+Syntax: `python emb.py`
 
 ### Trainining
 Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receives six main commands line parameters:
