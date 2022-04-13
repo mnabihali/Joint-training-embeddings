@@ -14,9 +14,7 @@ In this paper, we investigate how enhancement can be applied in neural speech cl
 ### Embeddings Extraction
 ---
 You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec) to extract the embeddings from the dataset.
-```bash
-python emb.py
-```
+Use `emb.py`
 
 ### Trainining
 Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receives six main commands line parameters:
