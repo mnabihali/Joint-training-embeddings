@@ -18,6 +18,7 @@ You need to create a .txt files for training, validation, and testing datasets w
 <noisy_n_path><space><clean_n_path>
 e.g.
 /train/noisy/a.wav /train/clean/a.wav
+/train/noisy/b.wav /train/clean/b.wav
 ```
 
 #### For the Wave-Enh the test.txt file should be
@@ -26,7 +27,8 @@ e.g.
 <noisy_2_path>
 <noisy_n_path>
 e.g.
-/train/noisy/a.wav
+/test/noisy/a.wav
+/test/noisy/b.wav
 ```
 
 ## Steps of Wave-Enh Strategy
