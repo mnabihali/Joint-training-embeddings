@@ -8,9 +8,9 @@ In this paper, we investigate how enhancement can be applied in neural speech cl
 
 
 
-# Steps of Embeds-Enh Strategy
+## Steps of Embeds-Enh Strategy
 
-## Embeddings Extraction
+### Embeddings Extraction
 ---
 You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec) to extract the embeddings from the dataset.
 ```bash
@@ -18,3 +18,10 @@ python emb.py
 ```
 
 ### Trainining
+Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receivers six commands line parameters:
+- `-m` path to save the best back-end model.
+- `-M` path to save the best front-end model.
+- `-b` number of residual blocks in the back-end speech classifier.
+- `-r` number of repeats of the residual blocks.
+- `-lr` learning rate
+- `e` number of epochs
