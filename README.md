@@ -7,7 +7,7 @@ This is the official implementation of the submitted Interspeech 2022 paper [Enh
 In this paper, we investigate how enhancement can be applied in neural speech classification architectures employing pre-trained speech embeddings. We investigate two approaches: one applies time-domain enhancement prior to extracting the embeddings; the other employs a convolutional neural network to map the noisy embeddings to the corresponding clean ones. All the experiments are conducted based on Fluent Speech commands, Google Speech commands v0.01, and generated noisy versions of these datasets.
 
 ## Architectures
-<img src="https://github.com/mnabihali/Joint-training-embeddings/blob/main/assets/systems.png" width="512"/>
+<img src="https://github.com/mnabihali/Joint-training-embeddings/blob/main/assets/SSSSS.png" width="512"/>
 
 ## Dataset
 You need to create a .txt files for training, validation, and testing datasets with the following structure: 
