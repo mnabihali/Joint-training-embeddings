@@ -9,11 +9,14 @@ In this paper, we investigate how enhancement can be applied in neural speech cl
 ## Architectures
 <img src="https://github.com/mnabihali/Joint-training-embeddings/blob/main/assets/systems.png" width="512"/>
 
+## Steps of Wave-Enh Strategy
+You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec), and modigy its path in `util/utils.py` file.
+
 ## Steps of Embeds-Enh Strategy
 
 ### Embeddings Extraction
 ---
-You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec) to extract the embeddings from the dataset.
+You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec), and modify its path in `emb.py` file to extract the embeddings from the dataset.
 
 Use `python emb.py`
 
