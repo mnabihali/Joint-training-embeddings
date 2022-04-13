@@ -12,7 +12,9 @@ In this paper, we investigate how enhancement can be applied in neural speech cl
 ## Dataset
 You need to create a .txt files for training, validation, and testing datasets with the following structure: 
 
-`<noisy_1_path><space><clean_1_path>  <noisy_2_path><space><clean_2_path> <noisy_n_path><space><clean_n_path>`
+`<noisy_1_path><space><clean_1_path> 
+<noisy_2_path><space><clean_2_path> 
+<noisy_n_path><space><clean_n_path>`
 e.g.
 `/train/noisy/a.wav /train/clean/a.wav`
 
