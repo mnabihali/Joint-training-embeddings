@@ -17,7 +17,4 @@ You need to download the wav2vec model from (https://github.com/pytorch/fairseq/
 python emb.py
 ```
 
-## Train
-```bash
-python train.py -m ./best_bkmodel.pkl -M ./best_frmodel.pkl 
-```
+### Trainining
