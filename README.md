@@ -1,6 +1,6 @@
 # Joint training embeddings
 ---
-This is the official implementation of the submitted Interspeech 2022 paper [Enhancing Embeddings for Speech Classification in Noisy Conditions], (Mohamed Nabih Ali, Daniele Falavigna, Alessio Brutti). 
+This is the official implementation of the submitted Interspeech 2022 paper **[Enhancing Embeddings for Speech Classification in Noisy Conditions]**, (Mohamed Nabih Ali, Daniele Falavigna, Alessio Brutti). 
 
 ## Description
 ---
