@@ -18,10 +18,19 @@ python emb.py
 ```
 
 ### Trainining
-Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receivers six commands line parameters:
+Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receives six main commands line parameters:
 - `-m` path to save the best back-end model.
 - `-M` path to save the best front-end model.
 - `-b` number of residual blocks in the back-end speech classifier.
 - `-r` number of repeats of the residual blocks.
 - `-lr` learning rate
 - `e` number of epochs
+
+Syntax: `python train.py -m ./best_bkmodel.pkl -M ./best_frmodel.pkl -b 5 -r 2 -lr 0.001 -e 100`
+
+### Evaluation
+Use `evaluation.py` to evaluate both models based on the test dataset. It receives two main commands line parameters:
+- `-m` path to save the best back-end model.
+- `-M` path to save the best front-end model.
+
+Syntax: `python evaluation.py -m ./best_bkmodel.pkl -M ./best_frmodel.pkl `
