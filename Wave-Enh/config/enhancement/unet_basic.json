@@ -1,0 +1,21 @@
+{
+    "model": {
+        "module": "model.model",
+        "main": "SEModel",
+        "args": {}
+    },
+    "dataset": {
+        "module": "dataset.waveform_dataset_enhancement",
+        "main": "WaveformDataset",
+        "args": {
+            "dataset": "/data/mohamed/jt/code/ts.txt",
+            "csv_filename": "/data/mohamed/fluent_speech_commands_dataset/data/test_data.csv",
+            "limit": 4000,
+            "offset": 0,
+            "sample_length": 16384
+        }
+    },
+    "custom": {
+        "sample_length": 16384
+    }
+}

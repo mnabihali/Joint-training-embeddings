@@ -1,0 +1,72 @@
+{
+    "seed": 1234,
+    "description": "...des",
+    "root_dir": "/data/mohamed/jt/code/emb09hitr/",
+    "cudnn_deterministic": true,
+    "trainer": {
+        "module": "trainer.trainer",
+        "main": "Trainer",
+        "epochs": 200,
+        "save_checkpoint_interval": 10,
+        "validation": {
+            "interval":10,
+            "find_max": true,
+            "custom": {
+                "visualize_audio_limit": 20,
+                "visualize_waveform_limit": 20,
+                "visualize_spectrogram_limit": 20,
+                "sample_length":16384
+            }
+        }
+    },
+    "model": {
+        "module": "model.model",
+        "main": "SEModel",
+        "args": {}
+    },
+    "loss_function": {
+        "module": "model.loss",
+        "main": "mse_loss",
+        "args": {}
+    },
+    "loss_function2": {
+        "module": "model.loss",
+        "main": "ce_loss",
+        "args": {}
+    },
+    "optimizer": {
+        "lr": 0.001,
+        "beta1": 0.9,
+        "beta2": 0.999
+    },
+    "train_dataset": {
+        "module": "dataset.waveform_dataset",
+        "main": "Dataset",
+        "args": {
+            "dataset": "/data/mohamed/jt/code/fulltr.txt",
+            "csv_filename": "/data/mohamed/fluent_speech_commands_dataset/data/train_data.csv",
+            "limit": null,
+            "offset": 0,
+            "sample_length": 16384,
+            "max_len":64000,
+            "mode": "train"
+        }
+    },
+    "validation_dataset": {
+        "module": "dataset.waveform_dataset",
+        "main": "Dataset",
+        "args": {
+            "dataset": "/data/mohamed/jt/code/fullvl.txt",
+            "csv_filename": "/data/mohamed/fluent_speech_commands_dataset/data/valid_data.csv",
+            "limit": null,
+            "offset": 0,
+            "mode": "validation"
+        }
+    },
+    "train_dataloader": {
+        "batch_size": 1,
+        "num_workers": 0,
+        "shuffle": true,
+        "pin_memory": false
+    }
+}
