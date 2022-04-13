@@ -20,6 +20,15 @@ e.g.
 /train/noisy/a.wav /train/clean/a.wav
 ```
 
+#### For the Wave-Enh the test.txt file should be
+```
+<noisy_1_path>
+<noisy_2_path>
+<noisy_n_path>
+e.g.
+/train/noisy/a.wav
+```
+
 ## Steps of Wave-Enh Strategy
 You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec), and modigy its path in `util/utils.py` file.
 
