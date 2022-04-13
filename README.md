@@ -12,6 +12,12 @@ In this paper, we investigate how enhancement can be applied in neural speech cl
 ## Steps of Wave-Enh Strategy
 You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec), and modigy its path in `util/utils.py` file.
 
+### Trainining
+Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receives two command line parameters:
+- `-C, --config`, the path of your configuration file for training process.
+- `-R, --resume`, resume training from the last saved checkpoint.
+
+Syntax `python train.py -C config/train/train.json` or `python train.py config/train/train.json -R`
 ## Steps of Embeds-Enh Strategy
 
 ### Embeddings Extraction
