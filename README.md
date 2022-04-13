@@ -21,8 +21,12 @@ Syntax `python train.py -C config/train/train.json` or `python train.py config/t
 
 ### Evaluation
 Use `enhancement.py` to evaluate both models. 
+- `-O` specify the folder where to save the enhanced signals.
+- `-D` use the signals using the GPU.
+- `-M` path to save the best front-end model.
+- `-m` path to save the best back-end model.
 
-Syntax: `python enhancement.py -C config/enhancement/unet_basic.json -D 0 -O <path to save the enhanced signals> -M <path to the speech enhancement model> -m <path to the back end speech classifier>`
+Syntax: `python enhancement.py -C config/enhancement/unet_basic.json -D 0 -O <path to save the enhanced signals> -M <path to the best speech enhancement model> -m <path to the best back end speech classifier>`
 
 ## Steps of Embeds-Enh Strategy
 
