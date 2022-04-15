@@ -16,9 +16,12 @@ You need to create a .txt files for training, validation, and testing datasets w
 <noisy_1_path><space><clean_1_path> 
 <noisy_2_path><space><clean_2_path> 
 <noisy_n_path><space><clean_n_path>
-e.g.
+e.g. In case of Wave-Enh strategy
 /train/noisy/a.wav /train/clean/a.wav
 /train/noisy/b.wav /train/clean/b.wav
+or 
+/train/noisy/a.pt /train/clean/a.pt
+/train/noisy/b.pt /train/clean/b.pt
 ```
 
 #### For the Wave-Enh the test.txt file should be
