@@ -22,7 +22,7 @@ e.g. In case of Wave-Enh strategy
 /train/noisy/a.wav /train/clean/a.wav
 /train/noisy/b.wav /train/clean/b.wav
 
-In cas of Embed-Enha strategy it should be like 
+In case of Embed-Enha strategy it should be like 
 
 /train/noisy/a.pt /train/clean/a.pt
 /train/noisy/b.pt /train/clean/b.pt
