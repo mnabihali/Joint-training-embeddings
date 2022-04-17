@@ -11,7 +11,7 @@ model, cfg, task = fairseq.checkpoint_utils.load_model_ensemble_and_task([cp_pat
 model = model[0]
 model.eval()
 model.double()
-for i, filename in enumerate(glob.glob('/data/disk1/data/mnabih/mnabih/enhanced_speech_commands_v0.01/wavs/sepeakers/**/*.wav')):
+for i, filename in enumerate(glob.glob('./FSC/wavs/speakers/**/*.wav')):
   print(i)
   sig, sr = sf.read(filename)
   sig = (torch.from_numpy(sig).double())
