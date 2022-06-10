@@ -39,7 +39,7 @@ e.g.
 ```
 
 ## Steps of Wave-Enh Strategy
-You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec), and modigy its path in `util/utils.py` file.
+You need to download the wav2vec model from (https://github.com/pytorch/fairseq/tree/main/examples/wav2vec), and modify its path in `util/utils.py` file.
 
 ### Trainining
 Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receives two command line parameters:
