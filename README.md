@@ -43,7 +43,7 @@ You need to download the wav2vec model from (https://github.com/pytorch/fairseq/
 
 ### Trainining
 Use `train.py` to jointly train both the speech enhancement and the speech classifier modules. It receives two command line parameters:
-- `-C, --config`, the path of your configuration file for training process.
+- `-C, --config`, the path of your configuration file for the training process.
 - `-R, --resume`, resume training from the last saved checkpoint.
 
 Syntax `python train.py -C config/train/train.json` or `python train.py config/train/train.json -R`
